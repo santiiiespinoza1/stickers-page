@@ -1,6 +1,6 @@
 const arrowRight = document.querySelector('.right');
 const arrowLeft = document.querySelector('.left');
-const imagen = document.querySelector('.catalogo');
+const imagen = document.querySelector('.imagen');
 const pagActual = document.querySelector('.pag-actual');
 var posActual = 1;
 arrowRight.addEventListener('click',function(){
