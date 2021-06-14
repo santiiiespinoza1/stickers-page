@@ -5,6 +5,7 @@ body {
   line-height: 1.6em; /* interlineado */
   margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .header{
@@ -27,7 +28,7 @@ body {
 .catalogo{
 	display: flex;
 	flex-direction: column;
-	height: 70vh;
+	height: 75vh;
 	text-align: center;
 }
 .imagen{
@@ -77,9 +78,8 @@ body {
 	font-size: .8rem;
 }
 footer{
-	display: flex;
 	color:white;
-	height: 5vh;
+	height: 10vh;
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	text-align: center;
 	font-size: .8rem;
@@ -89,7 +89,31 @@ footer p{
 	margin:0;
 }
 footer a i{
+	margin-top: 3px;
 	font-size: 1.5rem;
 	color: #fff;
 	margin-left:5px;
+}
+
+/*CONFIGURACION PARA COMPUTADORAS*/
+@media (min-width: 600px){
+	.right{
+		margin-right: 15%;
+	}
+	.left{
+		margin-left: 15%;
+	}
+	.imagen{
+		height: 100%;
+	}
+	.catalogo{
+		height: 75vh;
+	}
+	.caja-flechas{
+		height: 75vh;
+	}
+	footer{
+		display: block;
+		height: 10vh;
+	}
 }
